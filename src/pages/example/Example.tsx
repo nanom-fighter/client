@@ -9,9 +9,8 @@ const Example = () => {
       <div>Axios</div>
       <div>Redux Toolkit</div>
       <div>Tanstack Query</div>
-      <div>TailwindCSS</div>
 
-      <div>프로젝트를 바로 시작하세요.</div>
+      <div>프로젝트를 바로 시작하세요.!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!</div>
     </div>
   )
 }
