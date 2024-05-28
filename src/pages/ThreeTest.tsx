@@ -77,10 +77,10 @@ const Game = () => {
       )
     }
 
-    if (keys.current["ArrowLeft"]) movePlayer(player1, "left")
-    if (keys.current["ArrowRight"]) movePlayer(player1, "right")
-    if (keys.current["KeyA"]) movePlayer(player2, "left")
-    if (keys.current["KeyD"]) movePlayer(player2, "right")
+    if (keys.current["KeyA"]) movePlayer(player1, "left")
+    if (keys.current["KeyD"]) movePlayer(player1, "right")
+    if (keys.current["ArrowLeft"]) movePlayer(player2, "left")
+    if (keys.current["ArrowRight"]) movePlayer(player2, "right")
 
     // 충돌 방지 로직
     const playerWidth = 1
