@@ -1,6 +1,7 @@
 import React, { useRef, useState, useEffect, useCallback } from "react"
 import { Canvas, useFrame } from "@react-three/fiber"
 import * as THREE from "three"
+import { useNavigate } from "react-router-dom"
 
 class BasicPlayer {
   mesh: THREE.Mesh
@@ -23,6 +24,8 @@ class BasicPlayer {
 }
 
 const Game = () => {
+  const navigate = useNavigate()
+
   const player1Ref = useRef<BasicPlayer>(new BasicPlayer(0xff0000, -2))
   const player2Ref = useRef<BasicPlayer>(new BasicPlayer(0x0000ff, 2))
   const [player1Health, setPlayer1Health] = useState(100)
@@ -106,6 +109,7 @@ const Game = () => {
       <div>Player 1 Health: {player1Health}</div>
       <div>Player 2 Health: {player2Health}</div>
       <div>Time Left: {timeLeft}</div>
+      <div onClick={() => navigate("/a")}>Go to My one</div>
       <Canvas
         orthographic
         camera={{ zoom: 50, position: [0, 0, 10] }}
